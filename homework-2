@@ -46,3 +46,27 @@ Ref: https://etherscan.io/accounts
 Ethereum Buenos Aries Contributor | Beacon Chain Genesis Depositor | One of VitalikButerin's Wallets
 2. 0x000000000000000000000000000000000000dEaD
 Burn Address | Dead Address
+
+4. Using  https://remix.ethereum.org/ 
+
+Add this contract as a source file
+// SPDX-License-Identifier: None
+pragma solidity 0.8.17;
+
+contract BootcampContract {
+
+    uint256 number;
+
+
+    function store(uint256 num) public {
+        number = num;
+    }
+
+
+    function retrieve() public view returns (uint256){
+        return number;
+    }
+}
+
+1. Compile the contract
+2. Deploy the contract to the Remix VM environment
